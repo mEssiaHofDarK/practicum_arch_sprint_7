@@ -6,7 +6,7 @@ from langchain_community.document_loaders import DirectoryLoader
 
 def main():
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", show_progress=True)
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2", show_progress=True)
     vector_storage = Chroma(
         collection_name="my_d2_collection",
         embedding_function=embeddings,

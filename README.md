@@ -3,7 +3,7 @@
 ## Task 3
 ### Какая модель использовалась. 
 
-all-MiniLM-L6-v2
+paraphrase-multilingual-mpnet-base-v2
 ### Какая база знаний. 
 
 https://docs.trychroma.com/docs/overview/introduction
@@ -13,3 +13,7 @@ https://python.langchain.com/docs/tutorials/
 364
 ### Сколько времени заняла генерация.
 секунд 10
+## Task 4
+в качестве LLM модели использовал `cran-may/apollo2-9b-q5_k_m-gguf` (https://huggingface.co/Cran-May/Apollo2-9B-Q5_K_M-GGUF), запускал локально через `docker-model-plugin` (https://docs.docker.com/ai/model-runner/get-started/)
+
+на скрине пара примеров удачного поиска и один неудачный
